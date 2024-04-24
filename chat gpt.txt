@@ -1,0 +1,25 @@
+import robocode.*;
+
+public class MeuRobo extends Robot {
+
+    public void run() {
+        // Definindo a cor do robô como azul
+        setBodyColor(java.awt.Color.blue);
+
+        while (true) {
+            // Movendo-se para a direita
+            ahead(100);
+            turnRight(90);
+            
+            // Movendo-se para a frente
+            ahead(100);
+            
+            // Movendo-se para a esquerda
+            turnLeft(90);
+            ahead(100);
+            
+            // Movendo-se para trás
+            back(100);
+        }
+    }
+}

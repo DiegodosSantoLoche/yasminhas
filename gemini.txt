@@ -1,0 +1,25 @@
+import robocode.*;
+
+public class RoboBasico extends Robot {
+
+    // Método inicial do robô
+    public void run() {
+        // Ajusta a cor do robô para azul
+        setBodyColor(Color.BLUE);
+
+        // Loop principal do robô
+        while (true) {
+            // Move o robô para frente por 100 unidades
+            ahead(100);
+
+            // Vira o robô para a direita por 90 graus
+            turnRight(90);
+
+            // Move o robô para trás por 100 unidades
+            back(100);
+
+            // Vira o robô para a esquerda por 90 graus
+            turnLeft(90);
+        }
+    }
+}
